@@ -1,0 +1,74 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Individual Card */
+.cards {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.33% - 40px);
+  max-width: 300px;
+  text-align: left;
+  transition: background-color 0.3s;
+  padding-left: 10px;
+}
+
+/* Card Hover Effect */
+.cards:hover {
+  background-color: #e0f7fa; /* Light cyan color */
+}
+
+/* Card Content */
+.cards img {
+  width: 50px;
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
+.cards h3 {
+  margin: 15px 10px 10px;
+  font-size: 1.2em;
+  text-align: right;
+}
+
+.cards p {
+  font-size: 0.9em;
+  color: #555;
+  margin: 10px 15px;
+  text-align: right;
+}
+
+/* Link Style */
+.cards a {
+  display: inline-block;
+  margin-top: auto;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.cards a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsive - Stack Cards */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%;
+    max-width: none;
+  }
+}
