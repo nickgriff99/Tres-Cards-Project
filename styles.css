@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 /* Individual Card */
@@ -38,10 +38,17 @@ body {
   justify-content: left; /* Space between image and h3 */
 }
 /* Card Content */
-.cards img {
+.img-start {
+  display: flex;
   width: 50px;
   padding: 20px;
   align-self: flex-start;
+}
+
+.img-end > .card-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 20px;
 }
 
 .cards h3 {
@@ -70,14 +77,13 @@ body {
   color: #555;
   font-weight: bold;
   opacity: 60%;
+  justify-content: space-between;
 }
 
 .cards a:hover {
   text-decoration: underline;
   opacity: 100%;
 }
-
-.cards 
 
 /* Mobile Responsive - Stack Cards */
 @media (max-width: 768px) {
