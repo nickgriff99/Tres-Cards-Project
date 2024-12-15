@@ -21,54 +21,69 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   flex: 1 1 calc(33.33% - 40px);
-  max-width: 300px;
-  text-align: left;
+  max-width: 340px;
+  text-align: center;
   transition: background-color 0.3s;
-  padding-left: 10px;
+  padding: 15px;
 }
 
 /* Card Hover Effect */
 .cards:hover {
-  background-color: #e0f7fa; /* Light cyan color */
+  background-color: #89a2c4; /* Light cyan color */
 }
 
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: left; /* Space between image and h3 */
+}
 /* Card Content */
 .cards img {
   width: 50px;
-  margin-top: 20px;
+  padding: 20px;
   align-self: flex-start;
 }
 
 .cards h3 {
-  margin: 15px 10px 10px;
-  font-size: 1.2em;
+  display: flex;
+  font-size: 25px;
   text-align: right;
+  color: #171717;
+  text-decoration: solid;
 }
 
 .cards p {
-  font-size: 0.9em;
+  display: flex;
+  font-size: 20px;
   color: #555;
-  margin: 10px 15px;
-  text-align: right;
+  text-align: left;
+  opacity: 60%;
+  padding-left: 90px;
+  overflow-wrap: break-word;
+  margin-top: -25px;
 }
 
 /* Link Style */
 .cards a {
-  display: inline-block;
-  margin-top: auto;
+  display: flex;
   text-decoration: none;
-  color: #007bff;
+  color: #555;
   font-weight: bold;
+  opacity: 60%;
 }
 
 .cards a:hover {
   text-decoration: underline;
+  opacity: 100%;
 }
+
+.cards 
 
 /* Mobile Responsive - Stack Cards */
 @media (max-width: 768px) {
-  .card {
+  .cards {
     flex: 1 1 100%;
     max-width: none;
   }
 }
+  
